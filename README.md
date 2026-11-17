@@ -1,15 +1,15 @@
-<p align="center"><img src="images/banner.png" alt="VeloxDM" width="100%"></p>
+<p align="center"><img src="images/banner.png" alt="SotoDM" width="100%"></p>
 
 <p align="center">Gestor de descargas con segmentación dinámica, colas, planificador, video, BitTorrent y extensión de navegador.</p>
 
-<p align="center"><a href="https://github.com/Softsoto/VeloxDM/releases/latest"><b>Descargar</b></a> · <a href="https://sotomontes.com/#veloxdm">Ver en sotomontes.com</a> · <a href="#cómo-se-usa">Cómo se usa</a> · <a href="#temas">Temas</a> · <a href="#cómo-funciona-por-dentro">Cómo funciona</a> · <a href="#novedades">Novedades</a></p>
+<p align="center"><a href="https://github.com/Softsoto/SotoDM/releases/latest"><b>Descargar</b></a> · <a href="https://sotomontes.com/#veloxdm">Ver en sotomontes.com</a> · <a href="#cómo-se-usa">Cómo se usa</a> · <a href="#temas">Temas</a> · <a href="#cómo-funciona-por-dentro">Cómo funciona</a> · <a href="#novedades">Novedades</a></p>
 
 | Ficha técnica | |
 |---|---|
 | **Autor** | Sebastian Sotomontes |
 | **Tipo** | Gestor de descargas |
 | **Plataforma** | Windows 10 y 11 (64 bits) |
-| **Versión** | 0.6.0 |
+| **Versión** | 0.8.0 |
 | **Estado** | Funcional |
 | **Stack** | C# · .NET 10 · WebView2 |
 | **Precio** | Gratis |
@@ -19,21 +19,36 @@
 
 ## Qué es
 
-VeloxDM es un gestor de descargas para Windows pensado para bajar archivos grandes sin perder el progreso. Divide cada descarga en varias conexiones que trabajan en paralelo y, cuando una termina, ayuda a la más lenta para que el total baje lo más rápido posible. Reanuda después de un corte de internet, un reinicio o un apagón, sin empezar de cero.
+SotoDM es un gestor de descargas para Windows pensado para bajar archivos grandes sin perder el progreso. Divide cada descarga en varias conexiones que trabajan en paralelo y, cuando una termina, ayuda a la más lenta para que el total baje lo más rápido posible. Reanuda después de un corte de internet, un reinicio o un apagón, sin empezar de cero.
 
 Además de archivos normales por **HTTP, HTTPS y FTP**, baja **vídeo** de YouTube y más de mil sitios (con la calidad que elijas), **torrents**, y **paquetes de enlaces** de sitios de alojamiento. Se integra con tu navegador mediante una extensión, así que las descargas se capturan solas —con su sesión, cookies y referer— sin que tengas que copiar nada a mano.
 
-<p align="center"><img src="images/captura.jpg" alt="Captura de VeloxDM" width="100%"></p>
+<p align="center"><img src="images/captura.jpg" alt="Captura de SotoDM" width="100%"></p>
 
 ## Novedades
 
+**Versión 0.8.0**
+
+- **MEGA completo**: archivos y **carpetas** públicas (cada subcarpeta entra como su propio paquete), descarga que se **reanuda** tras un corte y **comprobación de integridad** antes de guardar el archivo.
+- **megaup.net**: lee carpetas y subcarpetas con sus nombres y tamaños reales, y respeta la espera del sitio antes de descargar.
+- **Abrir en el navegador** desde el capturador de enlaces (clic derecho), también para varios enlaces a la vez.
+- **Claves y contraseñas cifradas** con la protección de Windows: cuenta debrid, inicios de sesión de sitios y proxy.
+- Si un sitio solo deja ver un vídeo en su reproductor, SotoDM lo dice con claridad en lugar de reintentar sin fin.
+
+**Versión 0.7.0**
+
+- **Nuevo nombre: SotoDM.** Al actualizar, tus descargas, ajustes y temas se trasladan solos.
+- **Servicios debrid** (Real-Debrid y AllDebrid): con tu cuenta, los enlaces de sitios de alojamiento se desbloquean sin esperas ni captchas.
+- **Reglas de automatización**: cuando una descarga termina, la mueve, la renombra, la descomprime, abre un programa o te avisa, según el sitio, el tipo o el tamaño.
+- **Panel de estadísticas** con lo descargado hoy, en el mes, en los últimos 14 días, por sitio y por categoría.
+- **Ventana flotante «Soltar aquí»**, **modo portable** (desde una USB, sin instalar) y **modo gamer**, que baja la velocidad mientras juegas o ves algo a pantalla completa.
+- Los temas se pueden **exportar e importar** como un archivo para compartirlos.
+
 **Versión 0.6.0**
 
-- **Diez temas visuales**, cada uno con sus colores, sus iconos de barra y una escena animada en la franja inferior: Clásico, Rock, Años 90, Retro, Synthwave, Sakura, Cyberpunk y tres estilos Rejilla (azul, ámbar y violeta). Los tienes todos más abajo, en [Temas](#temas).
-- **Creador de temas**: un editor para hacer el tuyo propio —paleta de colores, tipo de letra, tus propias imágenes como iconos y una imagen o escena de fondo— con vista previa en vivo.
-- **MediaFire**: ahora recorre las subcarpetas; cada una entra como su propio paquete.
-- Los enlaces de carpeta y las direcciones escritas sin `https://` se reconocen y abren el capturador de enlaces.
-- **Guía de la extensión** del navegador al terminar de instalar (Edge, Chrome y Brave).
+- **Diez temas visuales**, cada uno con sus colores, sus iconos de barra y una escena animada en la franja inferior. Los tienes todos más abajo, en [Temas](#temas).
+- **Creador de temas** con vista previa en vivo: paleta, letra, tus propias imágenes como iconos y una imagen o escena de fondo.
+- **MediaFire** recorre las subcarpetas, y las direcciones escritas sin `https://` se reconocen.
 
 **Antes**
 
@@ -44,7 +59,7 @@ Además de archivos normales por **HTTP, HTTPS y FTP**, baja **vídeo** de YouTu
 
 ## Cómo se usa
 
-1. Instala VeloxDM y añade la extensión a tu navegador. Desde ese momento las descargas se capturan solas, con su sesión, cookies y referer.
+1. Instala SotoDM y añade la extensión a tu navegador. Desde ese momento las descargas se capturan solas, con su sesión, cookies y referer.
 2. Para bajar algo a mano, pulsa **Añadir URL**, pega el enlace y elige carpeta y categoría. En los vídeos eliges también la calidad.
 3. Sigue el avance en la ventana principal. Al abrir una descarga ves cómo progresa cada conexión y puedes pausarla o cambiar su velocidad.
 4. Agrupa las descargas en **colas** y abre el **planificador** para decidir qué días y a qué horas corren, y qué hacer al terminar.
@@ -61,7 +76,7 @@ Además de archivos normales por **HTTP, HTTPS y FTP**, baja **vídeo** de YouTu
 
 ## Temas
 
-VeloxDM trae diez estilos. Cada uno no solo cambia los colores: también cambia los **iconos de la barra de herramientas** y añade una **escena animada en pixel art** en la parte de abajo de la ventana. El estilo claro u oscuro de Windows se sigue respetando salvo donde el tema fija sus propios colores. Se eligen en **Opciones → Apariencia → Estilo**.
+SotoDM trae diez estilos. Cada uno no solo cambia los colores: también cambia los **iconos de la barra de herramientas** y añade una **escena animada en pixel art** en la parte de abajo de la ventana. El estilo claro u oscuro de Windows se sigue respetando salvo donde el tema fija sus propios colores. Se eligen en **Opciones → Apariencia → Estilo**.
 
 <table>
 <tr>
@@ -109,7 +124,7 @@ VeloxDM trae diez estilos. Cada uno no solo cambia los colores: también cambia 
 - Reanuda tras cortes de internet, reinicios o apagones.
 - Hasta 32 conexiones por archivo con segmentación dinámica.
 - Los archivos por partes se descomprimen solos al terminar, probando tu lista de contraseñas.
-- Si un sitio pide una verificación, VeloxDM abre la página para que la resuelvas tú; nada se salta.
+- Si un sitio pide una verificación, SotoDM abre la página para que la resuelvas tú; nada se salta.
 - La apariencia es tuya: diez temas de serie y un creador para diseñar los que quieras, sin tocar código.
 - Línea de comandos para usarlo desde scripts.
 
@@ -121,7 +136,7 @@ VeloxDM trae diez estilos. Cada uno no solo cambia los colores: también cambia 
 flowchart LR
   EXT["Extensión MV3<br/>Chrome · Edge · Brave"] -->|"native messaging"| NH["NativeHost"]
   NH -->|"tubería con nombre"| APP
-  subgraph APP["VeloxDM.exe"]
+  subgraph APP["SotoDM.exe"]
     UI["Ventanas WinForms + WebView2<br/>www/"] <--> DM["DownloadManager<br/>colas · planificador · límites"]
     DM --> HTTP["Downloader<br/>HTTP/HTTPS segmentado"]
     DM --> FTP["FtpDownloader"]
@@ -136,22 +151,22 @@ flowchart LR
 
 | Ruta | Contenido |
 |---|---|
-| `src/VeloxDM/Core/Downloader.cs` | Motor HTTP(S): segmentación dinámica, archivo temporal disperso, reanudación |
-| `src/VeloxDM/Core/FtpDownloader.cs` | FTP con la misma segmentación (REST) |
-| `src/VeloxDM/Core/HlsDownloader.cs` | HLS: variantes, segmentos en paralelo, AES-128, remux a MP4 |
-| `src/VeloxDM/Core/YtDlp.cs` | Motor yt-dlp (sondeo de calidades, progreso, unión con ffmpeg) |
-| `src/VeloxDM/Core/TorrentDownloader.cs` | BitTorrent (MonoTorrent), límites compartidos con el resto |
-| `src/VeloxDM/Core/DownloadManager.cs` | Lista, colas, planificador, velocidad, acciones al terminar |
-| `src/VeloxDM/Core/SiteGrabber.cs` | Capturador de sitios |
-| `src/VeloxDM/Core/RemoteServer.cs` | Control remoto HTTP en la red local |
-| `src/VeloxDM/Core/LinkGrabber.cs` | Capturador de enlaces: análisis de texto y páginas, comprobación, paquetes |
-| `src/VeloxDM/Core/Hosters.cs`, `FilePlatforms.cs` | Complementos de sitios y motores de plataformas compartidas |
-| `src/VeloxDM/Core/Packages.cs` | Fin de paquete: descompresión, contraseñas y aviso |
-| `src/VeloxDM/Core/Themes.cs` | Temas de usuario: paleta, iconos y fondo propios |
-| `src/VeloxDM/Core/ClickNLoad.cs` | Receptor Click'n'Load |
-| `src/VeloxDM/Core/NativeHost.cs`, `Ipc.cs` | Host de native messaging y tubería con la app |
-| `src/VeloxDM/Ui/`, `src/VeloxDM/www/` | Ventanas WinForms + WebView2 y su interfaz HTML/JS (temas, iconos y escenas incluidos) |
-| `installer/VeloxDM.iss` | Instalador Inno Setup (por usuario, sin administrador) |
+| `src/SotoDM/Core/Downloader.cs` | Motor HTTP(S): segmentación dinámica, archivo temporal disperso, reanudación |
+| `src/SotoDM/Core/FtpDownloader.cs` | FTP con la misma segmentación (REST) |
+| `src/SotoDM/Core/HlsDownloader.cs` | HLS: variantes, segmentos en paralelo, AES-128, remux a MP4 |
+| `src/SotoDM/Core/YtDlp.cs` | Motor yt-dlp (sondeo de calidades, progreso, unión con ffmpeg) |
+| `src/SotoDM/Core/TorrentDownloader.cs` | BitTorrent (MonoTorrent), límites compartidos con el resto |
+| `src/SotoDM/Core/DownloadManager.cs` | Lista, colas, planificador, velocidad, acciones al terminar |
+| `src/SotoDM/Core/SiteGrabber.cs` | Capturador de sitios |
+| `src/SotoDM/Core/RemoteServer.cs` | Control remoto HTTP en la red local |
+| `src/SotoDM/Core/LinkGrabber.cs` | Capturador de enlaces: análisis de texto y páginas, comprobación, paquetes |
+| `src/SotoDM/Core/Hosters.cs`, `FilePlatforms.cs` | Complementos de sitios y motores de plataformas compartidas |
+| `src/SotoDM/Core/Packages.cs` | Fin de paquete: descompresión, contraseñas y aviso |
+| `src/SotoDM/Core/Themes.cs` | Temas de usuario: paleta, iconos y fondo propios |
+| `src/SotoDM/Core/ClickNLoad.cs` | Receptor Click'n'Load |
+| `src/SotoDM/Core/NativeHost.cs`, `Ipc.cs` | Host de native messaging y tubería con la app |
+| `src/SotoDM/Ui/`, `src/SotoDM/www/` | Ventanas WinForms + WebView2 y su interfaz HTML/JS (temas, iconos y escenas incluidos) |
+| `installer/SotoDM.iss` | Instalador Inno Setup (por usuario, sin administrador) |
 
 ### Cómo captura el navegador
 
