@@ -2,18 +2,18 @@
 
 <p align="center">Gestor de descargas con segmentación dinámica, colas, planificador, video, BitTorrent y extensión de navegador.</p>
 
-<p align="center"><a href="https://github.com/Softsoto/SotoDM/releases/latest"><b>Descargar</b></a> · <a href="https://sotomontes.com/#veloxdm">Ver en sotomontes.com</a> · <a href="#cómo-se-usa">Cómo se usa</a> · <a href="#temas">Temas</a> · <a href="#cómo-funciona-por-dentro">Cómo funciona</a> · <a href="#novedades">Novedades</a></p>
+<p align="center"><a href="https://sotomontes.com/#veloxdm"><b>Ver en sotomontes.com</b></a> · <a href="#cómo-se-usa">Cómo se usa</a> · <a href="#temas">Temas</a> · <a href="#cómo-funciona-por-dentro">Cómo funciona</a> · <a href="#novedades">Novedades</a></p>
 
 | Ficha técnica | |
 |---|---|
 | **Autor** | Sebastian Sotomontes |
 | **Tipo** | Gestor de descargas |
 | **Plataforma** | Windows 10 y 11 (64 bits) |
-| **Versión** | 0.8.0 |
+| **Versión** | 0.8.1 |
 | **Estado** | Funcional |
 | **Stack** | C# · .NET 10 · WebView2 |
 | **Precio** | Gratis |
-| **Código** | Privado. El instalador se obtiene desde Releases. |
+| **Código** | Privado. Esta página es solo una presentación. |
 
 ---
 
@@ -26,6 +26,13 @@ Además de archivos normales por **HTTP, HTTPS y FTP**, baja **vídeo** de YouTu
 <p align="center"><img src="images/captura.jpg" alt="Captura de SotoDM" width="100%"></p>
 
 ## Novedades
+
+**Versión 0.8.1**
+
+- **megaup.net** integrado en el capturador de enlaces, con carpetas y subcarpetas completas.
+- **Abrir en el navegador** y **copiar dirección** desde el clic derecho del capturador.
+- Coincidencia más tolerante al adoptar una descarga hecha en el navegador (mayúsculas y guiones bajos).
+- Arreglo del letrero animado del tema 90s.
 
 **Versión 0.8.0**
 
